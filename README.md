@@ -15,10 +15,24 @@
 - git checkout -b YOUR_BRANCH_NAME	
 6. Complete the css-assignment and react-project (they are independent so they can be done in any order)
 
+1. Click the "Code" button and copy the HTTPS web URL 
+
+2. Create local folder in your terminal for the project
+    - `mkdir FOLDER_NAME`
+
+3. cd into the folder and glone the repo 
+    - `git clone HTTPS_URL`
+
+4. Enter the project directory and create a local branch
+    - `cd intro`
+    - `git checkout -b YOUR_BRANCH_NAME`
+
+5. Complete the css-assignment and react-project
+
 
 # After finishing
 Make sure you are on your local branch (git branch checks it for you) and run the following commands to add and push your code changes: 
 
-git add .
-git commit -m “completed project” (or any message in the quotes)
-git pushSe
+- `git add .`
+- `git commit -m "MESSAGE"`
+- `git push`
