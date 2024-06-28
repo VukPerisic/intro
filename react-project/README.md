@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+Objective
+The project is meant to give you a refresher on aspects of React like props, functional components, state variables, and using dependencies. Don't feel pressured to make it perfect and remember to ask for help when you need it!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+You will be creating a basic React app that shows a MainPage component with a button displaying the text "Generate Post". When a user clicks the button, your app will
 
-## Available Scripts
+Make a fetch call to the JSONPlaceholder API to get a dummy user post.
+Render a new Post component under the button that displays the fetched data as text.
+You can use any method you like for this, but we will have suggestions for each part of the project below.
 
-In the project directory, you can run:
+Sections
+****Please use npm install when starting the project and for any dependencies you want to use.
+MainPage component
 
-### `npm start`
+This will be the component displayed when the app loads. At first, there should only be a button with the text "Generate Post" visible on the page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Use Material UI's pre-built button component https://mui.com/material-ui/react-button/ as your button component (make sure to npm install and import)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+There should be a handleClick() function defined in MainPage that contains the logic for generating a new post.
 
-### `npm test`
+If the user clicks the button multiple times, there should be MULTIPLE posts rendered sequentially (i.e. first click generates post 1, second click generates a different post below the first one).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Suggestions
 
-### `npm run build`
+To render multiple posts you can keep an array of post "id numbers" as a state variable, update it on each button click, and use forEach() to map through the array and render the Post components.
+You can pass in a number as a prop to the Post component and use that in your API call inside the Post component to fetch a unique post.
+Post component
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You should make a fetch call to the JSONPlaceholder API to get the text for a post https://jsonplaceholder.typicode.com/guide/
+A new post should be returned for each click (one way to do this is to increment a state variable in MainPage, pass it as a prop to Post, and use it in the API call).
+You don't need much styling here, a simple container showing the post's text is fine!
+Submission
+To submit your learning sprint, complete the following steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Create components for Post and MainPage with the functionality described in the above sections.
+Use git branch and make sure that it's your team name.
+Add your changes by using git add ., commit your changes using git commit -m "MESSAGE", and then push your changes using git push --set-upstream main [YOUR_BRANCH].
+And that's it, congratulations on finishing the React intro!.
