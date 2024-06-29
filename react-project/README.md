@@ -2,14 +2,14 @@
 The project is meant to give you a refresher on aspects of React like props, functional components, state variables, and using dependencies. Don't feel pressured to make it perfect and remember to ask for help when you need it!
 
 ## Overview
-You will be creating a basic React app that shows a MainPage component with a button displaying the text "Generate Post". When a user clicks the button, your app will
+You will be creating a basic React app that shows a MainPage component with a button displaying the text "Generate Post". When a user clicks the button, your app will make a fetch call to the JSONPlaceholder API to get a dummy user post.
 
-Make a fetch call to the JSONPlaceholder API to get a dummy user post.
-Render a new Post component under the button that displays the fetched data as text.
+Your code should render a new Post component under the button that displays the fetched data as text.
 You can use any method you like for this, but we will have suggestions for each part of the project below.
 
-## Sections
-****Please run `npm install` when starting the project and to add any extra dependencies you want to use like MaterialUI.
+## Instructions
+****Please run `npm install` when starting the project. If you add any dependencies or extra libraries during the project please remember to also use  `npm install` to enable imports of these files. 
+
 MainPage component
 
 This will be the component displayed when the app loads. At first, there should only be a button with the text "Generate Post" visible on the page.
