@@ -18,27 +18,15 @@ p {
     font-size: 30px
 }
 
-div > h1 {
-    color: red
-}
 ```
 
 Let's break these down. 
 
-The `p` selector selects all `<p>` tags and applies the styling to those elements. If you want to apply the same styling to multiple tags, you can chain the selectors together with spaces (if you want to also apply it to `h1`, the selector would be `p h1`). 
+The `p` selector selects all `<p>` tags and applies the styling to those elements, in this case adding a green color.
 
-The `.example` selector selects all elements with the `example` class name. These would be those with `example` as an element's `class` attribute. Similar to the element selectors, you are able to chain these to apply the stylings with different classes. Instead of spaces, these selectors would be separated with `.`. (ex. `.example.other` applies the styling to classnames `example` and `other`). You can also apply several classnames to a single elements. For example, `class="example other"` applies the styles associated with `example` and `other`.
+In `.example` selector, the . in front signals that this is a classname, so the style is applied to all elements with className="example" in the code. To do the same thing but selecting by id, you would use # (i.e. #idName {} to style all elements with id="idName"). 
 
-Finally, the `div > h1` selector selects all `h1` elements that is a child of a `div`. So if your HTML looks like this:
-
-```
-<h1>Hello</h1>
-<div>
-    <h1>World</h1>
-</div>
-```
-
-Only "World" would be styled.
+For projects going forward, we will mostly be using the classname approach along with external css files for styling our React components. 
 
 Of course, this is just a small sample of all the selectors and styles that you can apply. If there is something specific that you want to style in a certain way, you should check out a reference sheet for CSS.
 
@@ -48,7 +36,9 @@ Of course, this is just a small sample of all the selectors and styles that you 
 
 ## Intro
 
-Now that you understand some of the basics of HTML and CSS, let’s take a look at how to align HTML elements. There are multiple ways to align HTML elements, but in this part, we recommend using flexboxes as they are widely used in modern web development (for example BootstrapV4 is built on top of flexboxes).
+Now let’s take a look at how to align HTML elements. There are multiple ways to align HTML elements, but in this part, we recommend using flexboxes as they are widely used in modern web development (for example BootstrapV4 is built on top of flexboxes).
+
+You will come across flexbox a lot in your frontend projects as it makes auto-aligning elements and organizing a webpage with a lot of sub-sections a lot faster and more uniform than manually styling every element with standard css. 
 
 ## Resources 
 
