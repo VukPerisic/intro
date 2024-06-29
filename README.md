@@ -13,11 +13,13 @@
 3. cd into the folder and glone the repo 
     - `git clone HTTPS_URL`
 
-4. Enter the project directory and create a local branch
+4. cd into the project directory and create a local branch
     - `cd intro`
     - `git checkout -b YOUR_BRANCH_NAME`
 
-5. Complete the css-assignment and react-project
+5. Complete the css-assignment and react-project (each project has its own README file with instructions)
+
+6. Please reach out via Slack or email if you have any questions or get stuck! 
 
 
 # After finishing
