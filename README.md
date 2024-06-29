@@ -19,7 +19,7 @@
 
 5. Complete the css-assignment and react-project (each project has its own README file with instructions)
 
-6. Please reach out via Slack or email if you have any questions or get stuck! 
+   Please reach out via Slack or email if you have any questions or get stuck! 
 
 
 # After finishing
