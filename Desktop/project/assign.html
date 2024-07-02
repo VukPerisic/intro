@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            margin: 5px 0;
+            position: relative;
+        }
+        .bar {
+            height: 100%;
+        }
+        .label {
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        .red { background-color: red; }
+        .blue { background-color: blue; position: relative; }
+        .green { background-color: green; }
+        .orange { background-color: orange; }
+        .green-line {
+            height: 6px;
+            background-color: green;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        .shrink { flex: 1; }
+        .fixed { width: 10px; }
+        .wide-fixed { width: 40px; }
+        .wide-blue-fixed { width: 60px; }
+        .wide-red-fixed { width: 60px; }
+        .fixed-20 { width: 20px; }
+        .centered {
+            margin: 0 auto;
+            width: 20px;
+            height: 20px;
+        }
+        .centered-abs {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+        }
+        .row-container {
+            margin-bottom: 20px;
+        }
+        .orange.fixed {
+    width: 35px;
+}
+.green.fixed {
+    width: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row-container">
+            <div class="label">Row 1</div>
+            <div class="row">
+                <div class="bar red shrink"></div>
+                <div class="bar blue shrink"></div>
+            </div>
+        </div>
+        <div class="row-container">
+            <div class="label">Row 2</div>
+            <div class="row">
+                <div class="bar green shrink"></div>
+                <div class="bar blue wide-fixed"></div>
+            </div>
+        </div>
+    
+        <div class="row-container">
+            <div class="label">Row 3</div>
+            <div class="row">
+                <div class="bar red wide-fixed"></div>
+                <div class="bar green shrink"></div>
+                <div class="bar blue wide-fixed"></div>
+            </div>
+        </div>
+        <div class="row-container">
+            <div class="label">Row 4</div>
+            <div class="row">
+                <div class="bar red shrink"></div>
+                <div class="bar blue wide-fixed"></div>
+        </div>
+        <div class="row-container">
+            <div class="label">Row 5</div>
+            <div class="row">
+                <div class="bar green shrink"></div>
+                <div class="bar red centered-abs"></div>
+            </div>
+        </div>
+        <div class="row-container">
+            <div class="label">Row 6</div>
+            <div class="row">
+                <div class="bar red shrink"></div>
+                <div class="bar blue wide-fixed"></div>
+                <div class="bar red shrink"></div>
+            </div>
+        </div>
+        <div class="row-container">
+            <div class="label">Row 7</div>
+            <div class="row">
+                <div class="bar red fixed"></div>
+                <div class="bar blue wide-fixed" style="flex-grow: 1;">
+                    <div class="green-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row-container">
+            <div class="label">Row 8</div>
+            <div class="row">
+                <div class="bar orange fixed"></div>
+                <div class="bar green shrink"></div>
+                <div class="bar orange fixed"></div>
+                <div class="bar green shrink"></div>
+                <div class="bar orange fixed"></div>
+                <div class="bar green shrink"></div>
+                <div class="bar orange fixed"></div>
+                <div class="bar green shrink"></div>
+                <div class="bar orange fixed"></div>
+            </div>
+        </div>
+        <div class="row-container">
+            <div class="label">Row 9</div>
+            <div class="row">
+                <div class="bar orange shrink"></div>
+                <div class="bar green fixed"></div>
+                <div class="bar orange shrink"></div>
+                <div class="bar green fixed"></div>
+                <div class="bar orange shrink"></div>
+                <div class="bar green fixed"></div>
+                <div class="bar orange shrink"></div>
+                <div class="bar green fixed"></div>
+                <div class="bar orange shrink"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
