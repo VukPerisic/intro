@@ -6,15 +6,15 @@ const Post = ({ id }) => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      try {
-        const response = await fetch(https://jsonplaceholder.typicode.com/posts/${id});
-        const data = await response.json();
-        setPost(data);
-      } catch (error) {
-        console.error('Error fetching post:', error);
-      }
-    };
-
+        try {
+          const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+          const data = await response.json();
+          setPost(data);
+        } catch (error) {
+          console.error('Error fetching post:', error);
+        }
+      };
+      
     fetchPost();
   }, [id]);
 
