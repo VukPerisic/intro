@@ -17,6 +17,7 @@ body {
     height: 60px;
     background-color: green;
     margin-bottom: 20px;
+    width: 100%;
   }
   
   /*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
@@ -42,59 +43,97 @@ body {
   }
   
   .blueExample2 {
-    
+    height: 60px;
+    width: 50px;
+    background-color: blue;
   }
   
   .little_red {
-    
+    height: 60px;
+    width: 70px;
+    background-color: red;
   }
   
   .little_blue { 
-  
+    height: 60px;
+    width: 70px;
+    background-color: blue;
   }
   
   .big_transparent { 
-
+    flex-grow: 1;
+  
   }
   
   .big_red {
- 
+    height: 60px;
+    flex-grow: 1;
+    background-color: red;
   }
   
   .little_red_square {
-
+    position: relative;
+    top: 20%;
+    left: 48%;
+    width: 40px; 
+    height: 40px; 
+    background-color: red;
   }
   
   .blueRectangle {
-  
+    height: 60px;
+    width: 70px;
+    left: 50%;
+    background-color: blue;
   }
   
   .stripContainer {
-
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
   .blueStrip {
-  
+    width: 100%;
+    height: 40%; 
+    background-color: blue;
   }
   
   .transparentStrip {
-  
+    width: 100%;
+    height: 40%; 
+    
   }
   
   .orangeContainer {
+    display: flex;
+    width: 100%;
+    }
 
-  }
-  
   .stableOrangeRectangle {
-  
+    width: 70px; 
+    height: 100%; 
+    background-color: orange;
   }
+  .green {
+    flex-grow: 1;
+    height: 100%; 
+}
   
   .unstableOrangeRectangle {
-
+    width: 200px;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: orange;
   }
   
   .transparentRectangle {
-
+    flex-grow: 1;
+    height: 100%; 
+    width: 30px;
+    background-color: transparent;
   }
 
 
