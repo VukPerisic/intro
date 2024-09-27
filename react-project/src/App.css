@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body{
+  background-color: #252525;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.generate-post-button-div {
+  /* This is coloring the text "Loading post" !! */
+  display: flex;               /* Flexbox: CSS layout model used for posts and button to behave to its rules*/
+  flex-direction: column;      /* Stack the button and posts vertically */
+  align-items: center;         /* Center everything horizontally */
+  margin-top: 50px !important;            /* Space from the top of the page */
+  color: rgb(255, 255, 255) !important;
+} 
+
+/* Styling for the button */
+.generate-post-button {
+  background-color: #ad74db !important;    /* Custom background color */
+  color: white !important;                 /* Custom text color */
+  font-size: 24px !important;                         /* Custom font size */
+  font-family: 'Verdana', sans-serif !important; /* Custom font family */
+  font-weight: bold !important;
+  /*text-transform: none !important; this is for making sure it's all caps or not */
+  padding: 20px 40px !important;           /* Custom padding */
+  border-radius: 50px !important;           /* Rounded corners */
+  margin-top: 50px !important;          /* Space between button and first post */
+  box-shadow: 0px 0px 2px #ffffff !important;
+  
+  /* outline: solid white !important; */
+  
+  margin-bottom: 40px !important;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Button hover effect */
+.generate-post-button:hover {
+  background-color: #865aaa !important;    /* Darker shade on hover */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Container for each post */
+.post-container {
+  border: 1px solid white !important;               /* Border around the post */
+  padding: 20px !important;
+  margin: 10px !important;                          /* Space between posts */
+  max-width: 600px;                        /* Limit the width of the post */
+  border-radius: 10px;                     /* Rounded corners for the post */
+  
+  background: #3a3a3a; 
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: light border */
+  backdrop-filter: blur(10px);   
+  
+  margin-bottom: 10px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.post-title {
+  font-size: 20px;                /* Larger font size */
+  color: #ffffff;                 /* Custom text color */
+  font-family: 'Verdana', sans-serif;  /* Font family for titles */
+  line-height: 1.6;               /* Increase line height for readability */
+  margin-bottom: 10px;            /* Space between title and body */
+  text-align: left;               /* Align title to the left */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for the post body (paragraph) */
+.post-body {
+  font-size: 16px;                /* Font size for body text */
+  color: #ffffff;                    /* Darker text color */
+  font-family: 'Roboto', sans-serif;/* Font family for body text */
+  line-height: 1.4;               /* Increase line height for readability */
+  margin-bottom: 20px;            /* Space after each post */
+  text-align: justify;            /* Justify text for a clean look */
 }
+
