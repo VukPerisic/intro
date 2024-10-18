@@ -41,40 +41,56 @@ body {
     flex-direction: row-reverse;
   }
   
-  .blueExample2 {
-    
+  .center_square{
+    justify-content: center;
+  }
+
+  .center_items{
+    align-items: center;
   }
   
   .little_red {
-    
+    background-color: red;
+    width: 80px;
   }
   
   .little_blue { 
-  
+    background-color: blue;
+    width: 80px;
   }
   
   .big_transparent { 
-
+    flex: 1;
+    flex-grow: 1;
   }
   
   .big_red {
- 
+    flex: 1;
+    flex-grow: 1;
+    background-color: red;
   }
   
   .little_red_square {
-
+    width: 40px;
+    height: 40px;
+    background-color: red;
   }
   
   .blueRectangle {
-  
+    width: 80px;
+    background-color: blue;
   }
   
   .stripContainer {
-
+    background-color: transparent;
+    align-items: baseline;
   }
   
   .blueStrip {
-  
+    flex: 1;
+    flex-grow: 1;
+    height: 30px;
+    background-color: blue;
   }
   
   .transparentStrip {
