@@ -93,24 +93,25 @@ body {
     background-color: blue;
   }
   
-  .transparentStrip {
-  
-  }
-  
   .orangeContainer {
-
+    display: flex;
+    justify-content: space-between;
+    gap: 25.6vw;
   }
   
   .stableOrangeRectangle {
-  
+    width: 60px;
+    background-color: orange;
+  }
+
+  .mediumTransparent {
+    flex: 1;
+    flex-grow: 1;
   }
   
   .unstableOrangeRectangle {
-
-  }
-  
-  .transparentRectangle {
-
+    width: 250px;
+    background-color: orange;
   }
 
 
